@@ -11,7 +11,7 @@ const Background = () => {
       {/* Imagem de fundo */}
       <img
         className="gif_fundo"
-        src="src/assets/images/render para site.gif"
+        src="./src/assets/images/render.gif"
         alt="Imagem de fundo"
       />
       {/* Texto sobre a imagem */}
