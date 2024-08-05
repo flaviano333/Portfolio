@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.css';
+import ImageComponent from './ImageComponent';
 
 const Carousel = () => {
   const settings = {
@@ -30,16 +31,16 @@ const Carousel = () => {
     <div className="carousel-container">
       <Slider {...settings}>
         <div>
-          <img src="/src/assets/images/aladdin mega drive.jpg" alt="Slide 2" />
+          <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/aladdin mega drive.jpg" alt="Slide 2" />
         </div>
         <div>
-          <img src="/src/assets/images/dkc21.jpg" alt="Slide 3" />
+          <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/dkc21.jpg" alt="Slide 3" />
         </div>
         <div>
-          <img src="/src/assets/images/mmx4.jpg" alt="Slide 3" />
+          <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/dkc22.jpg" alt="Slide 3" />
         </div>
         <div>
-          <img src="/src/assets/images/dkc22.jpg" alt="Slide 3" />
+          <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/mmx4.jpg" alt="Slide 3" />
         </div>                
       </Slider>
       <section id='sobre'> 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Paper, Typography } from '@mui/material';
 import './bio.css';
 import Grid from '@mui/material/Grid';
+import ImageComponent from './ImageComponent';
 
 const Bio = () => {
   return (
@@ -12,7 +13,7 @@ const Bio = () => {
     >
       <Grid container spacing={2} alignItems="flex-start" >
         <Grid item xs={4}>
-          <img src='src/assets/images/flaviano.png' alt="Foto" className="bio-image"/>
+          <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/flaviano.png" alt="Foto" className="bio-image"/>
         </Grid>
         <Grid item xs={8}>
                  

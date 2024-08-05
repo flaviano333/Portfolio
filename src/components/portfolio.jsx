@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Grid } from '@mui/material';
 import './portfolio.css';
 import Button from '@mui/material/Button';
+import ImageComponent from './ImageComponent';
 
 const Portfolio = () => {
   const [view, setView] = useState('thumbnail');
@@ -22,31 +23,31 @@ const Portfolio = () => {
         {view === 'thumbnail' && (
           <Grid container spacing={2} justifyContent="center">
             <Grid item xs={4}>
-              <img src="src/assets/images/mmx4.jpg" alt="Thumbnail 1" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/mmx4.jpg" alt="Thumbnail 1" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/dkc22.jpg" alt="Thumbnail 2" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/dkc22.jpg" alt="Thumbnail 2" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/aladdin mega drive.jpg" alt="Thumbnail 3" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/aladdin mega drive.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/dkc21.jpg" alt="Thumbnail 3" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/dkc21.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/ristar.jpg" alt="Thumbnail 3" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/ristar.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/Megaman X online.jpg" alt="Thumbnail 3" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/Megaman X online.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/Donkey Kong Country 3.jpg" alt="Thumbnail 3" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/Donkey Kong Country 3.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/zelda breath of the wild.jpg" alt="Thumbnail 3" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/zelda breath of the wild.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/Megaman X6.jpg" alt="Thumbnail 3" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/Megaman x6.jpg" className="portfolio-image" />
             </Grid>                                                                        
             {/* Adicione mais imagens conforme necessário */}
           </Grid>
@@ -104,13 +105,13 @@ const Portfolio = () => {
         {view === 'poster' && (
           <Grid container spacing={2} justifyContent="center">
             <Grid item xs={4}>
-              <img src="src/assets/images/aviso live.jpg" alt="flyer1" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/aviso live.jpg" alt="flyer1" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/sistematizei.png" alt="Poster 2" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/sistematizei.png" alt="Poster 2" className="portfolio-image" />
             </Grid>
             <Grid item xs={4}>
-              <img src="src/assets/images/flyer2.jpeg" alt="Poster 3" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/flyer2.jpeg" alt="Poster 3" className="portfolio-image" />
             </Grid>
             {/* Adicione mais imagens conforme necessário */}
           </Grid>

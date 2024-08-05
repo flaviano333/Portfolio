@@ -3,15 +3,16 @@ import './background.css';
 import { Typography } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import ImageComponent from './ImageComponent';
 
 const Background = () => {
   return (
     <>
     <div className="container">
       {/* Imagem de fundo */}
-      <img
+      <ImageComponent
         className="gif_fundo"
-        src="https://i.postimg.cc/XJHgT9Hz/render.gif"
+        imagePath="gs://portfolio-75cc2.appspot.com/render.gif"
         alt="Imagem de fundo"
       />
       {/* Texto sobre a imagem */}
