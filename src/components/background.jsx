@@ -11,7 +11,7 @@ const Background = () => {
       {/* Imagem de fundo */}
       <img
         className="gif_fundo"
-        src="src/assets/images/render.gif"
+        src="https://i.postimg.cc/XJHgT9Hz/render.gif"
         alt="Imagem de fundo"
       />
       {/* Texto sobre a imagem */}
