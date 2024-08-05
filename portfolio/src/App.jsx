@@ -5,6 +5,13 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Navbar from './components/Navbar.jsx';
+import Background from './components/background.jsx';
+import Carousel from './components/Carousel.jsx';
+import Bio from './components/bio.jsx';
+import Portfolio from './components/portfolio.jsx';
+import Contato from './components/contato.jsx';
+import Creditos from './components/creditos.jsx';
+import './App.css';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,87 +24,19 @@ const Item = styled(Paper)(({ theme }) => ({
 function App() {
   return (
     <>
-    <Navbar />
-
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid item xs={8}>
-          <Item>xs=8</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>xs=4</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>xs=4</Item>
-        </Grid>
-        <Grid item xs={8}>
-          <Item>xs=8</Item>
-        </Grid>
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid> 
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid> 
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid> 
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid> 
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid> 
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>   
-        <Grid item xs={12}>
-          <Item>xs=12</Item>
-        </Grid>                                                                      
-      </Grid>
-    </Box>      
+    <Navbar /> 
+    <section id='home'>
+      <Background />
+    </section>  
+      <Carousel />
+      <Bio /> 
+    <section id='portfolio'>
+      <Portfolio />
+    </section>
+    <section id='contato'>        
+      <Contato /> 
+    </section>
+    <Creditos /> 
     </>
   )
 }

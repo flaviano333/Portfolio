@@ -1,23 +1,37 @@
 /* Estilos para a Navbar */
+@font-face {
+  font-family: 'MinhaFontePersonalizada';
+  src: url('/src/assets/fonts/RifficFree-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Oswald;
+  src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');;
+
+}
 .navbar {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(255, 255, 255); /* Inicialmente transparente */
+  background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  padding: 10px 20px; /* Inclui padding lateral */
+  padding: 30px 20px; /* Inclui padding lateral */
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Inicialmente sem sombra */
   display: flex;
   justify-content: space-between; /* Espaço entre o logo e o ícone do menu */
   align-items: center; /* Alinha verticalmente os itens */
   box-sizing: border-box; /* Inclui padding e border no cálculo da largura total */
+  font-family: 'MinhaFontePersonalizada', sans-serif;
+  font-size: 21px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  
 }
 
 /* Quando a página é rolada */
 .navbar.scrolled {
-  background-color: rgba(51, 51, 51, 0.9); /* Cor de fundo com transparência quando rolado */
+  background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo com transparência quando rolado */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao scrollar */
 }
 
@@ -25,13 +39,15 @@
 .logo {
   display: flex; /* Ativa o Flexbox para alinhar imagem e texto */
   align-items: center; /* Alinha verticalmente imagem e texto */
-  font-size: 1.5rem;
-  color: white;
+  font-size: 27px;
+  color: rgb(255, 255, 255);
+}
+.logo.scrolled-logo{
+  color: rgb(0, 0, 0);
 }
 
 .logo img {
   margin-right: 10px; /* Espaço entre a imagem e o texto */
-  height: 50px; /* Altura da imagem */
 }
 
 /* Menu Icon */
@@ -62,6 +78,7 @@
   justify-content: space-between; /* Espaço entre o logo e o ícone do menu */
   align-items: center; /* Alinha verticalmente os itens */
   box-sizing: border-box; 
+  font-family: Oswald;
   
 }
 
@@ -71,20 +88,23 @@
 }
 
 .nav-links li a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 14px 20px;
   transition: color 0.3s ease;
   margin-left: auto;
-  
+  font-size: 21px;
+  transition: font-size 0.3s ease;
 }
 
 .nav-links li a.scrolled-link {
-  color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
 }
 
 .nav-links li a:hover {
   border-radius: 4px;
+  color: rgb(129, 188, 228);
+  font-size: 22px;
 }
 
 /* Responsivo */
@@ -94,11 +114,11 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(55, 0, 255); /* Inicialmente transparente */
+    background-color: rgba(55, 0, 255, 0); /* Inicialmente transparente */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     padding: 10px 20px; /* Inclui padding lateral */
     z-index: 1000;
-    box-shadow: none; /* Inicialmente sem sombra */
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5); /* Inicialmente sem sombra */
     display: flex;
     justify-content: space-between; /* Espaço entre o logo e o ícone do menu */
     align-items: center; /* Alinha verticalmente os itens */
@@ -115,6 +135,7 @@
   .menu-icon {
     display: flex; /* Mostrar ícone de menu em telas menores */
     margin-left: auto; /* Alinha o ícone à direita dentro do contêiner da barra de navegação */
+    color: rgb(0, 0, 0);
   }
 
   .nav-links {

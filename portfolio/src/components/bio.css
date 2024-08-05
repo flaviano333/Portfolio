@@ -1,0 +1,33 @@
+.bio-container {
+    background-color: #494949; /* Substitua pelo código de cor desejado */
+    padding: 20px;
+    margin: 0 auto;
+    word-wrap: break-word; /* Para garantir a quebra de palavras longas */
+    overflow-wrap: break-word;     
+  }
+
+  .bio-title {
+    color: #ffffff; /* Cor do texto do título */
+    font-size: 1.5rem; /* Tamanho da fonte para o título */
+    font-weight: bold; /* Deixar o texto em negrito */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    margin-left: 10%;
+  }
+  
+  .bio-content {
+    color: #e0e0e0; /* Cor do texto do conteúdo */
+    font-size: 1rem; /* Tamanho da fonte para o conteúdo */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-top: 0; /* Ajuste o espaçamento superior se necessário */
+    margin-bottom: 0; /* Ajuste o espaçamento inferior se necessário */
+  }
+  .bio-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #696969; /* Define a borda com 2px de largura e cor preta */
+    border-radius: 10px; /* Adiciona bordas arredondadas (opcional) */
+    margin-left: 10%;
+  }
+
+  

@@ -1,0 +1,88 @@
+/* Carousel.css */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+.carousel-container {
+
+  max-width: 90%; /* Ajuste para a largura máxima desejada */
+  height: 100%; /* Ajuste para a altura desejada */
+  margin: auto; /* Centraliza o carrossel horizontalmente */
+  position: relative; /* Necessário para posicionar os controles do carrossel */
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+
+}
+
+.slick-slide {
+  display: flex; /* Ajusta os slides para ter flexibilidade no alinhamento */
+  align-items: center; /* Centraliza verticalmente o conteúdo dos slides */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo dos slides */
+  margin: 0 20px;
+}
+.slick-slide img {
+  width: 100%; /* Ajuste o tamanho das imagens conforme necessário */
+  height: auto;
+  display: block; /* Garante que as margens funcionem corretamente */
+  border-radius: 5px;
+  border: 3px solid #474747;
+}
+
+.slick-dots {
+  bottom: -60px;/* Ajusta a posição dos pontos de navegação */
+  
+}
+/* Cor dos pontos (não ativo) */
+.slick-dots li button::before {
+  color: #56bbff; /* Cor dos pontos (não ativo) */
+  font-size: 10px; /* Ajuste o tamanho conforme necessário */
+  line-height: 12px; /* Alinha verticalmente o ponto */
+  content: '•'; /* Define o ponto como conteúdo do botão */
+}
+
+/* Cor do ponto ativo */
+.slick-dots li.slick-active button::before {
+  color: #ffffff; /* Cor do ponto ativo */
+}
+.slick-prev, .slick-next {
+  z-index: 1; /* Garante que as setas de navegação estejam acima de outros elementos */
+  width: 40px; /* Tamanho das setas (opcional) */
+  height: 40px; /* Tamanho das setas (opcional) */
+}
+
+.slick-prev {
+  left: -60px; /* Ajuste para posicionar a seta à esquerda do carrossel */
+}
+
+.slick-next {
+  right: -60px; /* Ajuste para posicionar a seta à direita do carrossel */
+}
+
+/* Adiciona estilos para as setas */
+.slick-prev:before, .slick-next:before {
+  font-size: 24px; /* Tamanho do ícone das setas */
+  color: white; /* Cor das setas */
+}
+.heading-container {
+  text-align: left; /* Alinha o texto à direita */
+  margin-left: 5%; /* Ajuste o valor conforme necessário */
+  padding-top: 10px;
+}
+
+.heading-container h1,
+.heading-container h3 {
+  margin: 0; /* Remove qualquer margem padrão */
+  padding: 0; /* Remove qualquer padding padrão */
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(211, 149, 252);
+  font-weight: 700;
+}
+
+.heading-container h3{
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}

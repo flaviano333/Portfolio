@@ -6,23 +6,26 @@
   
   /* Estilizando a parte interna da scrollbar */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Cor de fundo do trilho */
+    background: #363636; /* Cor de fundo do trilho */
     border-radius: 10px; /* Arredondamento dos cantos */
   }
   
   /* Estilizando o polegar (thumb) da scrollbar */
   ::-webkit-scrollbar-thumb {
-    background: #888; /* Cor do polegar */
+    background: #ca2d2d; /* Cor do polegar */
     border-radius: 0px; /* Arredondamento dos cantos */
   }
   
   /* Estilizando o polegar ao passar o mouse sobre ele */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Cor do polegar quando hover */
+    background: #ff3b3b; /* Cor do polegar quando hover */
   }
   
   /* Estilizando o canto da scrollbar (onde a barra horizontal e vertical se encontram) */
   ::-webkit-scrollbar-corner {
     background: #f1f1f1; /* Cor de fundo do canto */
   }
-  
+
+body {
+  background-color: #2b2b2b; /* Exemplo de cor cinza claro */
+}

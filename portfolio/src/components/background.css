@@ -1,0 +1,116 @@
+/* background.css */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+.gif_fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajuste conforme necessário */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .texto1 {
+    color: white; /* Cor do texto */
+    position: absolute;
+    color: white;
+    left:8%;
+    top: 25%;
+    z-index: 1; /* Garante que o texto esteja sobre a imagem */
+  }
+  .texto2 {
+    color: white; /* Cor do texto */
+    position: absolute;
+    color: white;
+    left:8%;
+    top: 34%;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+    z-index: 1; /* Garante que o texto esteja sobre a imagem */
+  }
+  .texto3 {
+    color: white; /* Cor do texto */
+    position: absolute;
+    color: #22f0ff;
+    left:8%;
+    top: 49%;
+    z-index: 1; /* Garante que o texto esteja sobre a imagem */
+  }
+
+  .background-container {
+    position: relative; /* Torna o container pai com posição relativa */
+    width: 100%;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar os limites */
+  }
+  
+  .gif_fundo {
+    width: 100%;
+    display: block; /* Faz a imagem ocupar toda a largura do contêiner */
+  }
+  
+  .text-container {
+    position: relative; /* Garante que o texto seja posicionado corretamente */
+    z-index: 1; /* Coloca o texto acima do SVG */
+  }
+  
+  .shape-svg {
+    position: absolute; /* Faz o SVG seguir o fluxo absoluto */
+    bottom: 0; /* Alinha o SVG ao fundo do container */
+    left: 0;
+    width: 100%;
+    height: 135px;
+  }
+  
+  .shape-fill {
+    fill: #2b2b2b; /* Cor de preenchimento da forma */
+  }
+  
+  @media (max-width: 768px) {
+    .shape-svg {
+      height: 74px; /* Altura reduzida para dispositivos móveis */
+    }
+    .texto1 {
+        left:8%;
+        top: 25%;
+        z-index: 1; /* Garante que o texto esteja sobre a imagem */
+      }
+      .texto2 {
+        color: white; /* Cor do texto */
+        position: absolute;
+        place-items: center;
+        justify-content: center;
+        left:8%;
+        top: 34%;
+        z-index: 1; /* Garante que o texto esteja sobre a imagem */
+      }
+      .texto3 {
+        color: white; /* Cor do texto */
+        position: absolute;
+        color: #22f0ff;
+        left:8%;
+        top: 58%;
+        z-index: 1; /* Garante que o texto esteja sobre a imagem */
+      }
+    
+  }
+  .ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+

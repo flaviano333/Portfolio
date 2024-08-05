@@ -1,0 +1,56 @@
+.portfolio-container {
+    padding: 20px;
+  }
+  
+  .view-buttons {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza os botões horizontalmente */
+  }
+  
+  .view-buttons button {
+    background-color: #6b63ff00; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    border: 2px solid #00e40b; /* Remove a borda padrão */
+    padding: 20px 40px; /* Espaçamento interno dos botões */
+    margin: 0 20px; /* Espaçamento entre os botões */
+    border-radius: 4px; /* Bordas arredondadas dos botões */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  }
+  
+  .view-buttons button:hover {
+    background-color: #01b40a; /* Cor de fundo ao passar o mouse sobre o botão */
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+  }
+  
+  .image-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+  }
+  
+  .portfolio-image {
+    width: 90%; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto; /* Mantém a proporção das imagens */
+    margin: 10px; /* Espaçamento entre as imagens */
+    border: 2px solid #ccc; /* Borda das imagens (opcional) */
+    border-radius: 5px; /* Bordas arredondadas das imagens (opcional) */
+    transition: width 0.5s ease;
+  }
+  .portfolio-image:hover {
+    width: 92%;
+  }  
+  .portfolio-video {
+    width: 480px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: 270px; /* Mantém a proporção das imagens */
+    margin: 0px; /* Espaçamento entre as imagens */
+    border: 2px solid #ccc; /* Borda das imagens (opcional) */
+    border-radius: 5px; /* Bordas arredondadas das imagens (opcional) */
+  }  
+  
