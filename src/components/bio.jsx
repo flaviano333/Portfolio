@@ -12,16 +12,16 @@ const Bio = () => {
       elevation={3} className='bio-container'
     >
       <Grid container spacing={2} alignItems="flex-start" >
-        <Grid item xs={4}>
+        <Grid item sm={4} xs={10}>
           <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/flaviano.png" alt="Foto" className="bio-image"/>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item sm={8} xm={12}>
                  
-          <Typography variant="h5" component="h2" style={{ color: '#ffffff', fontSize: '3rem', fontWeight: 'bold', marginTop: '20px', marginLeft: '10%' }}>
+          <Typography variant="h5" component="h2" style={{ color: '#ffffff', fontSize: '2.5rem', fontWeight: 'bold', marginTop: '20px', marginLeft: '10%' }}>
             FLÁVIO DE OLIVEIRA
           </Typography>
          
-          <Typography variant="body1" style={{ color: 'rgb(211, 149, 252)', fontSize: '2rem', fontWeight: 'bold', marginBottom: '10px', marginLeft: '10%' }}>
+          <Typography variant="body1" style={{ color: 'rgb(211, 149, 252)', fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '10px', marginLeft: '10%' }}>
             Estudante de Design e Programador
           </Typography>          
           <Typography variant="body1" style={{ color: '#e0e0e0', fontSize: '1.5rem', fontWeight: '400', marginBottom: '10px', marginLeft: '10%', fontFamily:'Ubuntu' }}>

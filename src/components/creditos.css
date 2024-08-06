@@ -18,14 +18,20 @@
   .overlay-text {
     position: absolute;
     font-family: "Oswald", sans-serif;
-    top: 30%; /* Ajuste conforme necessário para a posição vertical do texto */
+    top: 40%; /* Ajuste conforme necessário para a posição vertical do texto */
     left: 50%; /* Centraliza horizontalmente o texto */
     transform: translateX(-50%); /* Centraliza horizontalmente o texto */
     color: white; /* Cor do texto */
-    font-size: 1.4rem; /* Tamanho da fonte do texto */
+    font-size: 1.5rem; /* Tamanho da fonte do texto */
     font-weight: bold; /* Peso da fonte do texto */
     font-weight: 300;
     background: rgba(0, 0, 0, 0); /* Fundo semitransparente para melhor legibilidade */
-    padding: 10px; /* Espaçamento interno ao redor do texto */
+    padding: 0px; /* Espaçamento interno ao redor do texto */
     border-radius: 8px; /* Bordas arredondadas do fundo do texto (opcional) */
   }
+  @media (max-width: 768px) {
+    .overlay-text {
+      font-size: 1.009rem;
+    }
+
+    }

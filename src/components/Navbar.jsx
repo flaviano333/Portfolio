@@ -21,6 +21,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
+    
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className={`logo ${isScrolled ? 'scrolled-logo' : ''}`}>
         Portfólio
@@ -32,7 +33,7 @@ const Navbar = () => {
         <li><a href="#portfolio" className={isScrolled ? 'scrolled-link' : ''}>Portfólio</a></li>
         <li><a href="#contato" className={isScrolled ? 'scrolled-link' : ''}>Contatos</a></li>
       </ul>
-      <div className="menu-icon" onClick={toggleMenu}>
+      <div className={`menu-icon ${isScrolled ? 'scrolled-menu-icon' : ''}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>

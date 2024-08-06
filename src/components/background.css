@@ -49,6 +49,7 @@ html, body {
     color: #22f0ff;
     left:8%;
     top: 49%;
+    margin-right: 1%;
     z-index: 1; /* Garante que o texto esteja sobre a imagem */
   }
 

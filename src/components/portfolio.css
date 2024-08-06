@@ -53,4 +53,30 @@
     border: 2px solid #ccc; /* Borda das imagens (opcional) */
     border-radius: 5px; /* Bordas arredondadas das imagens (opcional) */
   }  
+@media (max-width: 768px) {  
+  .view-buttons {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza os botões horizontalmente */
+  }
   
+  .view-buttons button {
+    display: block; /* Define o botão como elemento de bloco */
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    background-color: #6b63ff00; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    border: 2px solid #00e40b; /* Borda dos botões */
+    padding: 20px 40px; /* Espaçamento interno dos botões */
+    margin: 10px 0; /* Espaçamento vertical entre os botões */
+    border-radius: 4px; /* Bordas arredondadas dos botões */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  }
+  .portfolio-video {
+    width: 300px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: 190px; /* Mantém a proporção das imagens */
+    margin: 0px; /* Espaçamento entre as imagens */
+    border: 2px solid #ccc; /* Borda das imagens (opcional) */
+    border-radius: 5px; /* Bordas arredondadas das imagens (opcional) */
+  }     
+}

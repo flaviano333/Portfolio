@@ -30,10 +30,32 @@
   border-radius: 5px;
   border: 3px solid #474747;
 }
-
+@media (max-width: 768px) {
+  .slick-slide {
+    display: flex; /* Ajusta os slides para ter flexibilidade no alinhamento */
+    align-items: center; /* Centraliza verticalmente o conteúdo dos slides */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dos slides */
+    margin: 0 0px;
+  } 
+  .slick-slide img {
+    width: 98%; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto;
+    display: block; /* Garante que as margens funcionem corretamente */
+    border-radius: 5px;
+    border: 3px solid #474747;
+  }
+  .slick-prev {
+    left: -20px; /* Ajuste para posicionar a seta à esquerda do carrossel */
+  }
+  
+  .slick-next {
+    right: -20px; /* Ajuste para posicionar a seta à direita do carrossel */
+  }
+  
+}
 .slick-dots {
   bottom: -60px;/* Ajusta a posição dos pontos de navegação */
-  
+  overflow: hidden;
 }
 /* Cor dos pontos (não ativo) */
 .slick-dots li button::before {
