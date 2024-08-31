@@ -13,13 +13,12 @@
 
 .carousel-container img {
   width: 100%;
-  height: 300px;
+  height: auto;
 
 }
 .video-iframe {
   width: 100%;
-  height: auto;
-  border: none; /* Remove a borda padrão */
+  height: 300px;
 }
 .slick-slide {
   display: flex; /* Ajusta os slides para ter flexibilidade no alinhamento */
