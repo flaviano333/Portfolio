@@ -53,7 +53,7 @@ const Carousel = () => {
       <div className="carousel-container">
         <Slider {...settings}>
           <div>
-          <iframe width="100%" src="https://www.youtube.com/embed/_R6MHJ-Gtxk?si=UVHhYh8hV3KjKNgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="100%" style="height: auto;" src="https://www.youtube.com/embed/_R6MHJ-Gtxk?si=UVHhYh8hV3KjKNgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>          
           <div>
             <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/aladdin mega drive.jpg" alt="Slide 1" />
