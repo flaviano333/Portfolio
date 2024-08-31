@@ -18,7 +18,7 @@
 }
 .video-iframe {
   width: 100%;
-  height: 80%;
+  height: 280px;
 }
 .slick-slide {
   display: flex; /* Ajusta os slides para ter flexibilidade no alinhamento */
@@ -40,7 +40,10 @@
     justify-content: center; /* Centraliza horizontalmente o conteúdo dos slides */
     margin: 0 0px;
   }
-
+  .video-iframe {
+    width: 100%;
+    height: 180px;
+  }
   .slick-slide img {
     width: 98%; /* Ajuste o tamanho das imagens conforme necessário */
     height: auto;
