@@ -12,7 +12,7 @@ const Background = () => {
       {/* Imagem de fundo */}
       <ImageComponent
         className="gif_fundo"
-        imagePath="gs://portfolio-75cc2.appspot.com/jonatan-pie-fwzQrNqoTd8-unsplash.jpg"
+        imagePath="gs://portfolio-75cc2.appspot.com/render.gif"
         alt="Imagem de fundo"
       />
       {/* Texto sobre a imagem */}
