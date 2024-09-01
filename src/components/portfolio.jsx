@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import ImageComponent from './ImageComponent';
 
 const Portfolio = () => {
-  const [view, setView] = useState('thumbnail');
+  const [view, setView] = useState('idvisual');
 
   const handleViewChange = (newView) => {
     setView(newView);
