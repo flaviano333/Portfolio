@@ -14,6 +14,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio-container">
       <div className="view-buttons">
+        <button onClick={() => handleViewChange('idvisual')}>PROJETOS ID VISUAL</button>
         <button onClick={() => handleViewChange('thumbnail')}>THUMBNAILS</button>
         <button onClick={() => handleViewChange('flyer')}>ANIMAÇÕES</button>
         <button onClick={() => handleViewChange('poster')}>FLYERS</button>
