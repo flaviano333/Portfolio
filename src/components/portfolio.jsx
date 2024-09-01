@@ -17,7 +17,7 @@ const Portfolio = () => {
         <button onClick={() => handleViewChange('thumbnail')}>THUMBNAILS</button>
         <button onClick={() => handleViewChange('flyer')}>ANIMAÇÕES</button>
         <button onClick={() => handleViewChange('poster')}>FLYERS</button>
-        <button onClick={() => handleViewChange('modelagem3d')}>Modelagem 3D</button>
+        <button onClick={() => handleViewChange('modelagem3d')}>PROJETOS 3D</button>
         {/* Adicione mais botões conforme necessário */}
       </div>
       <div className="image-container">
@@ -120,10 +120,10 @@ const Portfolio = () => {
         {view === 'modelagem3d' && (
           <Grid container spacing={2} justifyContent="center">
             <Grid item sm={4}>
-              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/aviso live.jpg" alt="flyer1" className="portfolio-image" />
+            <iframe className="portfolio-video" src="https://www.youtube.com/embed/WmQuLVrpNAM?si=nxXdKTxo_9sKY_CW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </Grid>
             <Grid item sm={4}>
-              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/sistematizei.png" alt="Poster 2" className="portfolio-image" />
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/render 2.png" alt="Poster 2" className="portfolio-image" />
             </Grid>
             <Grid item sm={4}>
               <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/flyer2.jpeg" alt="Poster 3" className="portfolio-image" />
