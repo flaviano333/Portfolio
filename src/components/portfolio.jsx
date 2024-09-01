@@ -14,7 +14,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio-container">
       <div className="view-buttons">
-        <button onClick={() => handleViewChange('idvisual')}>PROJETOS ID VISUAL</button>
+       {/* <button onClick={() => handleViewChange('idvisual')}>PROJETOS ID VISUAL</button> */}
         <button onClick={() => handleViewChange('thumbnail')}>THUMBNAILS</button>
         <button onClick={() => handleViewChange('flyer')}>ANIMAÇÕES</button>
         <button onClick={() => handleViewChange('poster')}>FLYERS</button>
@@ -22,7 +22,7 @@ const Portfolio = () => {
         {/* Adicione mais botões conforme necessário */}
       </div>
       <div className="image-container">
-      {view === 'idvisual' && (
+      {/* {view === 'idvisual' && (
           <Grid container spacing={2} justifyContent="center">
             <Grid item sm={4}>
               <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/aviso live.jpg" alt="flyer1" className="portfolio-image" />
@@ -33,9 +33,9 @@ const Portfolio = () => {
             <Grid item sm={4}>
               <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/flyer2.jpeg" alt="Poster 3" className="portfolio-image" />
             </Grid>
-            {/* Adicione mais imagens conforme necessário */}
           </Grid>
-        )}        
+        )}     */}  
+         
         {view === 'thumbnail' && (
           <Grid container spacing={2} justifyContent="center">
             <Grid item sm={4}>
