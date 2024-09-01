@@ -134,9 +134,7 @@ const Portfolio = () => {
             <Grid item sm={4}>
               <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/render cinza.png" alt="Poster 3" className="portfolio-image" />
             </Grid>            
-            <Grid item sm={4}>
-              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/render cinza.png" alt="Poster 3" className="portfolio-image" />
-            </Grid>                     
+              
             {/* Adicione mais imagens conforme necessário */}
           </Grid>
         )}        
