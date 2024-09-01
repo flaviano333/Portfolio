@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import ImageComponent from './ImageComponent';
 
 const Portfolio = () => {
-  const [view, setView] = useState('idvisual');
+  const [view, setView] = useState('thumbnails');
 
   const handleViewChange = (newView) => {
     setView(newView);
@@ -35,7 +35,7 @@ const Portfolio = () => {
             </Grid>
           </Grid>
         )}     */}  
-         
+
         {view === 'thumbnail' && (
           <Grid container spacing={2} justifyContent="center">
             <Grid item sm={4}>
