@@ -49,7 +49,19 @@ const Portfolio = () => {
             </Grid>
             <Grid item sm={4}>
               <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/majoras mask.png" alt="Thumbnail 3" className="portfolio-image" />
-            </Grid>            
+            </Grid>       
+            <Grid item sm={4}>
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/megamanx123.jpg" alt="Thumbnail 3" className="portfolio-image" />
+            </Grid> 
+            <Grid item sm={4}>
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/mario 64.jpg" alt="Thumbnail 3" className="portfolio-image" />
+            </Grid>   
+            <Grid item sm={4}>
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/castlevania sotn.jpg" alt="Thumbnail 3" className="portfolio-image" />
+            </Grid>   
+            <Grid item sm={4}>
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/Sonic 1 megadrive.jpg" alt="Thumbnail 3" className="portfolio-image" />
+            </Grid>
             <Grid item sm={4}>
               <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/dkc21.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
