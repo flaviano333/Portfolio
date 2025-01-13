@@ -48,6 +48,9 @@ const Portfolio = () => {
               <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/aladdin mega drive.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
             <Grid item sm={4}>
+              <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/majoras mask.png" alt="Thumbnail 3" className="portfolio-image" />
+            </Grid>            
+            <Grid item sm={4}>
               <ImageComponent imagePath="gs://portfolio-75cc2.appspot.com/dkc21.jpg" alt="Thumbnail 3" className="portfolio-image" />
             </Grid>
             <Grid item sm={4}>
